@@ -35,6 +35,7 @@ static void inicializar_aleatorio() {
 
 // Gera um número aleatório entre min e max (inclusive)
 static int numero_aleatorio(int min, int max) {
+    inicializar_aleatorio();
     return rand() % (max - min + 1) + min;
 }
 
