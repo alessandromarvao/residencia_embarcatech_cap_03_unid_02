@@ -28,7 +28,10 @@ void espera_usb() {
     printf("Conexão USB estabelecida!\n");
 }
 
-
+// Inicialize o gerador de números aleatórios uma vez no início do programa
+static void inicializar_aleatorio() {
+    srand(time(NULL));
+}
 
 // Gera um número aleatório entre min e max (inclusive)
 static int numero_aleatorio(int min, int max) {
